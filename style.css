@@ -6,8 +6,8 @@
 }
 :root{
     --primary-color: #4ade80;
-    --primary-dark: #22c55e;
-    --primary-light: #86efac;
+    --primary-dark: #1d557c;
+    --primary-light: #226471;
     --bg-dark: #1a1a1a;
     --danger-color: #d9534f;
     --text-light: #f3f4f6;
@@ -55,7 +55,7 @@ header p{
 }
 .pricing-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
@@ -194,12 +194,13 @@ h3 {
     font-weight: 600;
     padding: 5px 12px;
     border-radius: 20px;
-    z-index: 3;
+    z-index: 2;
 }
 .testimonial{
     margin-top: 60px;
     display: flex;
     justify-content: center;
+    padding: 0 15px;
 }
 .quote{
     background-color: var(--card-bg);
@@ -207,6 +208,7 @@ h3 {
     padding: 40px;
     position: relative;
     box-shadow: var(--shadow-md);
+    max-width: 400px;
 }
 .quote i{
     color: var(--primary-color);
@@ -220,7 +222,7 @@ h3 {
     font-size: 1.1rem;
     margin-bottom: 20px;
     line-height: 1.7;
-    position: absolute;
+    position: static;
     padding-left: 15px;
 }
 .author{
@@ -233,7 +235,7 @@ h3 {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 15px;
-    background-origin: 2px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 .avatar img{
     width: 100%;
